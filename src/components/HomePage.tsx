@@ -38,7 +38,7 @@ const Home = () => {
             <Typography variant='h4' color='primary' mb={2} fontWeight={700}>
               Explore Experiences
             </Typography>
-            <Box display='flex' mb={4} overflow='scroll'>
+            <Box display='flex' mb={4} overflow='auto'>
               {categories.map((category) => {
                 const isActive = categoryId
                   ? category.id === categoryId

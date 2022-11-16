@@ -40,7 +40,7 @@ const ExperienceCategoryCarousel = ({
       container
       sx={
         displayMode === ExperienceCategoryCarouselDisplayMode.Horizontal
-          ? { flexWrap: 'nowrap', overflow: 'scroll' }
+          ? { flexWrap: 'nowrap', overflow: 'auto' }
           : {}
       }
       spacing={3}
