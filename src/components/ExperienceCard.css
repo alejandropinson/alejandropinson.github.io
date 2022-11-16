@@ -1,0 +1,12 @@
+.ExperienceCardImage {
+    width: 239px;
+    height: 319px;
+    background-size: cover !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .ExperienceCardImage {
+        width: 100%;
+        height: 435px;
+    }
+  }

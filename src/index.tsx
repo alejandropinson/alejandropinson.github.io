@@ -14,7 +14,19 @@ const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1 } },
 });
 
-const theme = createTheme();
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Inter',
+  },
+  palette: {
+    primary: {
+      main: '#fff',
+    },
+    secondary: {
+      main: '#000',
+    },
+  },
+});
 
 root.render(
   <React.StrictMode>

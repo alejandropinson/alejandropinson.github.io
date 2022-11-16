@@ -1,12 +1,16 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
-
-const HelloMarco = () => <h1>Hello Marco!</h1>;
+import CategoryPage from './components/CategoryPage';
+import ExperiencesPage from './components/ExperiencesPage';
+import HomePage from './components/HomePage';
 
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<HelloMarco />} />
+      <Route path='/' element={<HomePage />}>
+        <Route path='/' element={<ExperiencesPage />} />
+        <Route path='/category/:categoryId' element={<CategoryPage />} />
+      </Route>
       <Route path='*' element={<Navigate to='/' replace />} />
     </Routes>
   </BrowserRouter>
